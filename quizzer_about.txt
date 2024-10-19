@@ -1,0 +1,2 @@
+1. website will load ques + options from database
+2. we will have an option to add ques to the database from browser, rather than manual filling
