@@ -11,21 +11,21 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>PQuiz</title>
+		<title>QuizMaster</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 	</head>
 	
 	<body>
 		<header>
 			<div class="container">
-				<h1>PQuiz</h1>
+				<h1>QuizMaster</h1>
 			</div>
 		</header>	
 		
 		<main>
 			<div class="container">
-				<h2>Test your PHP knowledge</h2>	
-				<p>This is a multiple choice, single correct quiz to test your knowledge of PHP</p>
+				<h2>Test your knowledge</h2>	
+				<p>This is a multiple choice quiz to test your knowledge</p>
 				<ul>
 					<li><strong>Number of questions: </strong><?php echo $total; ?></li>
 					<li><strong>Type of quiz: </strong>Multiple Choice Single Correct</li>
@@ -37,7 +37,7 @@
 
 		<footer>
 			<div class="container">
-				Sample Copyright &copy; 2024, PQuiz
+				Sample Copyright &copy; 2024, QuizMaster
 			</div>
 		</footer>
 	</body>

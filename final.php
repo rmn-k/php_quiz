@@ -6,14 +6,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>PQuiz</title>
+		<title>QuizMaster</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	
 	<body>
 		<header>
 			<div class="container">
-				<h1>PQuiz</h1>
+				<h1>QuizMaster</h1>
 			</div>
 		</header>	
 		
@@ -27,7 +27,7 @@
 
 		<footer>
 			<div class="container">
-				Sample Copyright &copy; 2024, PQuiz
+				Sample Copyright &copy; 2024, QuizMaster
 			</div>
 		</footer>
 	</body>
