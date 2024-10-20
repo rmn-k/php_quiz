@@ -26,14 +26,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>PHP Quizzer</title>
+		<title>PQuiz</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	
 	<body>
 		<header>
 			<div class="container">
-				<h1>PHP Quizzer</h1>
+				<h1>PQuiz</h1>
 			</div>
 		</header>	
 		
@@ -57,7 +57,7 @@
 
 		<footer>
 			<div class="container">
-				Copyright &copy; 2024, PHP Quizzer
+				Sample Copyright &copy; 2024, PQuiz
 			</div>
 		</footer>
 	</body>
