@@ -2,7 +2,7 @@
 	include 'database.php';
 	// we have $mysqli object created in database.php, ie our connection with database has been established
 ?>
-
+<?php session_start(); ?>
 <?php
 
 	// related to questions table - - - - 
@@ -15,6 +15,12 @@
 	$query2= "SELECT * FROM `choices` WHERE question_number=$number";
 	$result2= $mysqli->query($query2) or die($mysqli->error.__LINE__); // we will get many recoreds
 
+
+	$query3= "SELECT * FROM `questions`";
+	$result3= $mysqli->query($query3) or die($mysqli->error.__LINE__);
+	$total= $result3->num_rows;
+
+	
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,7 +39,7 @@
 		
 		<main>
 			<div class="container">
-				<div class="current">Question 1 of 5</div>
+			<div class="current">Question <?php echo $question['question_number']; ?> of <?php echo $total; ?></div>
 				<p class="question"> <!-- make sure that the link is something like: ...question?n=1 -->
 					<?php echo $question['text']; ?>
 				</p>
@@ -44,6 +50,7 @@
 						<?php endwhile; ?>
 					</ul>
 					<input type="submit" value="Confirm" />
+					<input type="hidden" name="number" value="<?php echo $number; ?>" />
 				</form>
 			</div>
 		</main>

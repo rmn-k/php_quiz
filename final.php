@@ -1,3 +1,7 @@
+<?php
+	// starting session to access session variable
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,7 +20,7 @@
 		<main>
 			<div class="container">
 				<h2>The test is completed.</h2>
-				<p>Final Score: 5</p>
+				<p>Final Score: <?php echo $_SESSION['score'] ?></p>
 				<a href="question.php?n=1" class="start">Retake test</a>
 			</div>
 		</main>
@@ -28,4 +32,7 @@
 		</footer>
 	</body>
 </html>
-
+<?php
+	// destroying session at end to reset session variables
+	session_destroy();
+?>
